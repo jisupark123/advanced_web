@@ -1,0 +1,21 @@
+{
+  "name": "advanced_web_01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src/ src/httpserver.js",
+    "start": "nodemon --watch src/ src/httpserver.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "cookie": "^0.5.0"
+  }
+}

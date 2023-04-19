@@ -1,0 +1,36 @@
+<!-- 고급 웹프로그래밍 과제 #1
+     박지수 60192753 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./front.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="article--header">박지수 60192753 과제 #1</header>
+      <main>
+        <span id="welcome"></span>
+        <span id="desc">새로운 기사를 입력하세요.</span>
+        <div id="article--row-1">
+          <textarea id="article--textarea" type="text"></textarea>
+          <button id="article--upload-btn">등록</button>
+        </div>
+        <div>검색/수정/삭제할 기사 번호를 입력하세요.</div>
+        <form id="article--select-form">
+          <input id="article--input" type="number" />
+          <button id="find-btn">검색</button>
+          <button id="edit-btn">수정</button>
+          <button id="delete-btn">삭제</button>
+        </form>
+        <button id="article--show-all-btn">전체 기사 보기</button>
+        <ul id="article--list"></ul>
+      </main>
+    </div>
+    <script src="./front.js"></script>
+  </body>
+</html>

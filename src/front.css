@@ -1,0 +1,63 @@
+/* 고급 웹프로그래밍 과제 #1
+   박지수 60192753 */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+}
+
+#container {
+  /* width: 300px; */
+  border: 1px solid black;
+}
+
+header {
+  padding: 5px 10px;
+  background-color: bisque;
+  border-bottom: 1px solid black;
+}
+main {
+  padding: 10px 10px 20px 10px;
+  background-color: cornsilk;
+}
+
+#desc {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  color: blue;
+}
+
+#welcome {
+  display: block;
+  margin-bottom: 5px;
+  color: blue;
+}
+
+#article--row-1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+#article--textarea {
+  height: 50px;
+}
+
+#article--row-2 {
+  margin-bottom: 20px;
+}
+#article--row-2 input {
+  width: 100px;
+}
+
+li {
+  color: green;
+}

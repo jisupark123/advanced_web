@@ -1,0 +1,46 @@
+<!-- 고급 웹프로그래밍 과제 #1
+     박지수 60192753 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./front.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>박지수 60192753 과제 #1</header>
+      <main>
+        <span id="desc">id를 입력해서 로그인하세요.</span>
+        <form id="login--form">
+          <input name="id" type="text" />
+          <button type="submit">로그인</button>
+        </form>
+      </main>
+    </div>
+    <script>
+      const form = document.querySelector('#login--form');
+
+      // 아이디 서버에 보내고 article 페이지로 이동
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        try {
+          await fetch('/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: formData.get('id'),
+            }),
+          });
+          window.location.href = '/article';
+        } catch (error) {}
+      });
+    </script>
+  </body>
+</html>
